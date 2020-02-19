@@ -1,0 +1,31 @@
+body {
+    background-color: #f3f3f3;
+    color: #717171;
+}
+
+.titlebanner{
+    text-align: center;
+
+}
+
+.navbar{
+
+}
+
+.footer{
+    text-align: center;
+
+}
+
+.thumbnail{
+    width:200px;
+    fit:crop;
+}
+
+.img-fluid {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+}
+
+

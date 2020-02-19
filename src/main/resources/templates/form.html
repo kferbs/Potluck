@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        /** { border: 1px solid red !important; }*/
+    </style>
+</head>
+<body>
+<div class="container">
+<div th:replace="base :: title"></div>
+<div th:replace="base :: navlinks"></div>
+
+
+<!--    <br /><br />
+    <h3>Add to the Potluck</h3>
+    <form method="POST" action="/add" th:object="${potluck}"
+          enctype="multipart/form-data">
+        Name: <input type="text" th:field="*{name}">
+        Dish: <input type="text" th:field="*{dish}">
+        <input type="file" name="file" /><br><br>
+        <input type="submit" value="SEND IT!!" />
+
+    </form>-->
+
+
+    <br /><br />
+
+    <form method="POST" action="/add" th:object="${potluck}"
+          enctype="multipart/form-data">
+        Name: <input type="text" th:field="*{name}">
+        Dish: <input type="text" th:field="*{dish}">
+        <input type="file" name="file" /><br><br>
+        <input type="submit" value="SEND IT!!" />
+
+    </form>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col" style="text-align: center">
+            <h3>Add to the Potluck</h3>
+            <br>
+
+            <form id="contact-form" method="POST" action="/add" role="form" th:object="${potluck}" enctype="multipart/form-data">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name: </label>
+                                <input id="form_name" type="text" th:field="*{name}" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Dish: </label>
+                                <input id="form_lastname" type="text" th:field="*{dish}" name="name" class="form-control" placeholder="What dish will you bring? *" required="required" data-error="Dish is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Please specify your need *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<div th:replace="base :: footer"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
