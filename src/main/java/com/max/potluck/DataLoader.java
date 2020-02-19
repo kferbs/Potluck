@@ -40,6 +40,5 @@ public class DataLoader implements CommandLineRunner {
         potluck = new Potluck("Josia","Yummy Yogurt Parfait","https://res.cloudinary.com/kristynf/image/upload/v1582143598/dishes/photo-1488477181946-6428a0291777_bzo0zn.jpg", "https://www.allrecipes.com/recipe/37095/yogurt-parfait/");
         repository.save(potluck);
 
-
     }
 }
