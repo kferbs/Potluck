@@ -73,6 +73,7 @@ body {
 
 .img-box img {
     filter: grayscale(1);
+    margin: auto;
 }
 .img-box img:hover{
     filter: grayscale(0);

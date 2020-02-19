@@ -38,22 +38,56 @@
     <br>
     <br>
 
-    <form method="POST" action="/add" th:object="${potluck}" enctype="multipart/form-data">
 
-        Name: <input type="text" th:field="*{name}">
-        <br>
-        <br>
-        Dish: <input type="text" th:field="*{dish}">
-        <br>
-        <br>
-        <input type="file" name="file">
-        <br>
-        <br>
-        Recipe URL: <input type="text" th:field="*{recipe}">
-        <br>
-        <br>
-        <br>
-        <input type="submit" value="SEND IT!!" />
+    <form method="POST" action="/add" th:object="${potluck}" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col">
+                Name: <input type="text" th:field="*{name}">
+            </div>
+
+            <div class="col">
+            <input type="file" name="file">
+            </div>
+        </div>
+
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                Dish: <input type="text" th:field="*{dish}">
+            </div>
+
+            <div class="col">
+                Recipe URL: <input type="text" th:field="*{recipe}">
+            </div>
+        </div>
+
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="row">
+            <p></p>
+        </div>
+
+
+
+        <div class="row">
+            <div style="margin: auto">
+            <input type="submit" value="SEND IT!!" />
+            </div>
+        </div>
+
 
     </form>
 </div>

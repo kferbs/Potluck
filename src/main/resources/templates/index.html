@@ -38,13 +38,22 @@
                     <div th:if="${potluck.image} !=null">
 
                             <a th:href="${potluck.recipe}" class="d-block mb-4 h-100" target="_blank" >
-                                <img class="img-fluid" th:src="${potluck.image}" alt="">
-                                <h4 th:text="${potluck.name}"></h4><h4 th:text="${potluck.dish}"></h4>
+                                <h4 style="text-align: center" th:text="${potluck.name}"></h4>
+                                <img style="height: 250px" class="img-fluid" th:src="${potluck.image}" alt="">
+                                <p style="text-align: center" th:text="${potluck.dish}"></p>
                             </a>
-                        </div>
                     </div>
                 </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+
+                    <a href="/add" class="d-block mb-4 h-100" style="background: #db86cb; min-height: 230px">
+                        <h3>Join the Party!</h3>
+                        <img style="height: 250px; background: #db86cb" class="img-fluid" src="" alt="">
+                    </a>
+                </div>
             </div>
+        </div>
 
 
 
