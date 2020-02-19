@@ -37,9 +37,9 @@
 
                     <div th:if="${potluck.image} !=null">
 
-                            <a href="#" class="d-block mb-4 h-100">
+                            <a th:href="${potluck.recipe}" class="d-block mb-4 h-100" target="_blank" >
                                 <img class="img-fluid" th:src="${potluck.image}" alt="">
-                                <h4 th:text="${potluck.name}"></h4><h4 th:text="${potluck.dish}"></h4><p th:text="${potluck.recipe}"></p>
+                                <h4 th:text="${potluck.name}"></h4><h4 th:text="${potluck.dish}"></h4>
                             </a>
                         </div>
                     </div>
