@@ -7,6 +7,8 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600|Catamaran|Dosis|Lato|Libre+Baskerville:400,400i|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -25,84 +27,29 @@
     </div>
 
 
-
     <div class="row">
 
         <hr class="mt-2 mb-5">
 
-        <div class="row text-center text-lg-left">
+            <div class="row text-center text-lg-left">
 
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="/food/photo-1542574271-7f3b92e6c821.jfif" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="/food/photo-1568051243851-f9b136146e97.jfif" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="/food/photo-1552611052-d59a0d9741bc.jfif" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
-                </a>
-            </div>
+                <div th:each="potluck : ${potlucks}" class="col-lg-3 col-md-4 col-6">
 
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid" th:src="${potluck.image}" alt="">
-                </a>
+                    <div th:if="${potluck.image} !=null">
+
+                            <a href="#" class="d-block mb-4 h-100">
+                                <img class="img-fluid" th:src="${potluck.image}" alt="">
+                                <h4 th:text="${potluck.name}"></h4><h4 th:text="${potluck.dish}"></h4><p th:text="${potluck.recipe}"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-        </div>
 
-    </div>
+
+
 
 </div>
 
@@ -126,3 +73,21 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!--
+
+    <div class="row">
+        <div th:each="potluck : ${potlucks}">
+            <div th:if="${potluck.image} !=null">
+                <img th:src="${potluck.image}" /><hr />
+            </div>
+        </div>
+
+    </div>
+
+-->

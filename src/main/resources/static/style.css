@@ -1,6 +1,20 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Catamaran', sans-serif;
+*/
+
+
 body {
     background-color: #f3f3f3;
     color: #717171;
+    font-family: 'Roboto', sans-serif;
 }
 
 .titlebanner{
@@ -14,18 +28,17 @@ body {
 
 .footer{
     text-align: center;
-
 }
 
 .thumbnail{
-    width:200px;
-    fit:crop;
+    /*width:200px;*/
+    /*fit:crop;*/
 }
 
 .img-fluid {
-    width: 400px;
-    height: 300px;
-    object-fit: fill;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
 
 

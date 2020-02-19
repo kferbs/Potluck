@@ -18,10 +18,10 @@ public class HomeController {
     @Autowired
     CloudinaryConfig cloudc;
 
-    @RequestMapping("/list")
+    @RequestMapping("/index")
     public String listPotlucks(Model model){
         model.addAttribute("potlucks", potluckRepository.findAll());
-        return "list";
+        return "index";
     }
     @GetMapping("/add")
     public String newPotluck(Model model){
@@ -42,7 +42,7 @@ public class HomeController {
             e.printStackTrace();
             return "redirect:/add";
         }
-        return "redirect:/";
+        return "redirect:/index";
     }
 
 

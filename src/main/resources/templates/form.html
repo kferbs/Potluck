@@ -35,7 +35,11 @@
           enctype="multipart/form-data">
         Name: <input type="text" th:field="*{name}">
         Dish: <input type="text" th:field="*{dish}">
-        <input type="file" name="file" /><br><br>
+        <input type="file" name="file">
+        Recipe: <input type="text" th:field="*{recipe}">
+        <br>
+        <br>
+        <br>
         <input type="submit" value="SEND IT!!" />
 
     </form>

@@ -13,16 +13,17 @@ public class Potluck {
     private String name;
     private String dish;
     private String image;
+    private String recipe;
 
 /////////////////////////////////////////////////////////////////////////////////
     public Potluck() {
     }
 
-    public Potluck(long id, String name, String dish, String image) {
-        this.id = id;
+    public Potluck(String name, String dish, String image, String recipe) {
         this.name = name;
         this.dish = dish;
         this.image = image;
+        this.recipe = recipe;
     }
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -56,5 +57,13 @@ public class Potluck {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
     }
 }
