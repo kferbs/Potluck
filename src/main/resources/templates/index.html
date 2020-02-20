@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600|Catamaran|Dosis|Lato|Libre+Baskerville:400,400i|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
 <div class="container">
+
     <div class="row">
         <div class="col-12" style="text-align: center">
             <div th:replace="base :: title"></div>
@@ -26,7 +27,6 @@
         </div>
     </div>
 
-
     <div class="row">
 
         <hr class="mt-2 mb-5">
@@ -36,28 +36,29 @@
                 <div th:each="potluck : ${potlucks}" class="col-lg-3 col-md-4 col-6">
 
                     <div th:if="${potluck.image} !=null">
-
-                            <a th:href="${potluck.recipe}" class="d-block mb-4 h-100" target="_blank" >
-                                <h4 style="text-align: center" th:text="${potluck.name}"></h4>
+                        <div class="d-block mb-4 h-100">
+                            <h4 style="text-align: center; font-family: 'Gochi Hand', cursive" th:text="${potluck.name}"></h4>
+                            <a th:href="${potluck.recipe}" target="_blank" >
                                 <img style="height: 250px" class="img-fluid" th:src="${potluck.image}" alt="">
-                                <p style="text-align: center" th:text="${potluck.dish}"></p>
                             </a>
+                            <p style="text-align: center; opacity: 70%; font-family: 'Comfortaa', sans-serif; font-size: small" th:text="${potluck.dish}"></p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6">
 
-                    <a href="/add" class="d-block mb-4 h-100" style="background: #db86cb; min-height: 230px">
-                        <h3>Join the Party!</h3>
-                        <img style="height: 250px; background: #db86cb" class="img-fluid" src="" alt="">
+                    <a href="/add" class="d-block mb-4 h-100" style="background-color: #f7f7f7">
+                        <h3 style="text-align: center">Join the Party!</h3>
+                        <img style="height:250px; object-fit: scale-down" class="img-fluid" src="10-106139_click-hand-cursor-png-transparent-png.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
 
 
-
-
+<!--    style="background: #db86cb; min-height: 230px"-->
+<!--    style="height: 250px; background: #db86cb"-->
 
 
 </div>

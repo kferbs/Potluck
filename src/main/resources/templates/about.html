@@ -7,92 +7,82 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600|Catamaran|Dosis|Lato|Libre+Baskerville:400,400i|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-<div class="titlebanner" th:replace="base :: title"></div>
-<div class="navbar" th:replace="base :: navlinks"></div>
+<body style="background-color: rgba(117,221,195,0.25)">
 
 <div class="container" >
+
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <div th:replace="base :: title"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <div th:replace="base :: navlinks"></div>
+        </div>
+    </div>
+
+
     <div class="team"></div>
+    <br>
+    <br>
     <h1 style="text-align: center">Our Team</h1>
     <div class="row">
         <div class="col-md-4 profile-pic text-center">
             <div class="img-box">
                 <img src="1498222632-anthony-edwards-in-top-gun.jpg" class="img-responsive">
             </div>
-            <h2>MAX</h2>
+            <h2>Max</h2>
             <h3></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Push it to the limit when you're in the Danger Zone.
+               I sit in the front so I don't get called on.</p>
         </div>
 
         <div class="col-md-4 profile-pic text-center">
             <div class="img-box">
                 <img src="64bc0cdc847294d40c421255af8600ae.jpg" class="img-responsive">
             </div>
-            <h2>KRISTYN</h2>
+            <h2>Kristyn</h2>
             <h3></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>A fierce amazonian warrior.  She is the Queen of Potlucks.
+                Don't mess with my sushi skills, I am an ex-starbucks barista (so I know a latte)</p>
         </div>
 
         <div class="col-md-4 profile-pic text-center">
             <div class="img-box">
                 <img src="top-gun-tom-cruise-1.jpeg" class="img-responsive">
             </div>
-            <h2>JAMES</h2>
+            <h2>James</h2>
             <h3></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Coffee coffee coffee, coffee coffee.
+                I also have a dog.  He is a spoiled boi.</p>
         </div>
     </div>
+    <br>
+    <br>
 
     <div class="row">
     <br>
     <br>
+
     <h1 style="margin: auto">About Us</h1>
-    <p>Bacon ipsum dolor amet chicken capicola shank frankfurter turkey landjaeger pork belly spare ribs tongue fatback shankle andouille corned beef doner. Bacon pork belly landjaeger, andouille sausage spare ribs burgdoggen buffalo shankle porchetta t-bone. Boudin sirloin ribeye capicola pig. Chicken turkey shank venison rump.
-        Jerky filet mignon pancetta, ground round salami picanha boudin tri-tip shankle sirloin.</p>
+    <p>The A-Team revolves around the four members of a former commando outfit, now mercenaries. Their leader is
+        Lieutenant Colonel/Colonel John "Hannibal" Smith, whose plans tend to be unorthodox but effective. </p>
+    <p>Lieutenant Templeton Peck, usually called "Face" or "Faceman", is a smooth-talking con man who serves as the team's appropriator of
+        vehicles and other useful items, as well as the team's second-in-command. The team's pilot is Captain H.M.
+        "Howling Mad" Murdock, who has been declared insane and lives in a Veterans' Administration mental institution
+        for the show's first four seasons. </p>
+    <p>Finally, there is the team's strong man, mechanic and Sergeant First Class Bosco "B.A.", or "Bad Attitude", Baracus (Mr. T).</p>
+
     </div>
-
-
-
 </div>
-<section id="contact">
-    <div class="container">
-        <h1>Get In Touch</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                </form>
-            </div>
-            <div class="col-md-6 contact-info">
-                <div class="follow">
-                    <label><b>Address:</b></label>1234 Gunther Street, TOGO MD
-                </div>
-                <div class="follow">
-                    <label><b>Phone:</b></label>555-555-5555
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
 
 
 

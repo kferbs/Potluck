@@ -7,14 +7,27 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600|Catamaran|Dosis|Lato|Libre+Baskerville:400,400i|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+
     <style>
         /** { border: 1px solid red !important; }*/
     </style>
 </head>
-<body>
+<body style="background-color: rgba(254,205,119,0.2)">
 <div class="container">
-<div th:replace="base :: title"></div>
-<div th:replace="base :: navlinks"></div>
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <div th:replace="base :: title"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <div th:replace="base :: navlinks"></div>
+        </div>
+    </div>
 
 
 <!--    <br /><br />
@@ -34,7 +47,7 @@
 <div class="container">
     <br>
     <br>
-    <h1>Add to the Potluck!</h1>
+    <h1 style="color: rgb(255,134,118); text-align: center">Add to the Potluck!</h1>
     <br>
     <br>
 
