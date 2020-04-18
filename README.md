@@ -3,8 +3,8 @@
 Web application that allows user's to upload their own images to show what they are bringing to the Potluck.
 
 ## Preview
-![Website Preview](/Screen Shot 2020-04-18 at 7.25.39 PM.png)
-
+![Website Screenshot](/src/main/resources/static/Screen Shot 2020-04-18 at 7.25.39 PM.png)
+Format: ![Alt Text](Potluck Website)
 
 ## Getting Started
 
