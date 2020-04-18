@@ -2,6 +2,10 @@
 
 Web application that allows user's to upload their own images to show what they are bringing to the Potluck.
 
+## Preview
+![Website Preview](src/main/resources/static/Screen Shot 2020-04-18 at 7.25.39 PM.png)
+
+
 ## Getting Started
 
 Must have thymleaf engine installed in order to run Spring.
@@ -17,7 +21,7 @@ Must have thymleaf engine installed in order to run Spring.
 
 ## Contributors
 
-* **Kristyn**  - [github username](github link)
+* **Kristyn**  - [kferbs](github.com/kferbs)
 * **Max**  - [github username](github link)
 * **James**  - [github username](github link)
 
