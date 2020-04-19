@@ -31,6 +31,5 @@ Must have thymeleaf engine installed in order to run Spring.
 
 ## Acknowledgments
 
-* Our mother's, and father's 
-* This is the work of a tireless effort.. days.. hours.. minutes..
-
+* Montgomery College Java Web Development Bootcamp teachers and TAs. 
+* Our classmates who pushed us to excel.
