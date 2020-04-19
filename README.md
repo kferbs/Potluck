@@ -3,7 +3,11 @@
 Web application that allows user's to upload their own images to show what they are bringing to the Potluck.
 
 ## Preview
+<<<<<<< HEAD
 ![Website Preview](https://res.cloudinary.com/kristynf/image/upload/v1587311301/Screen_Shot_2020-04-18_at_7.25.39_PM_yszz4k.png)
+=======
+![Website Preview](/Screen Shot 2020-04-18 at 7.25.39 PM.png)
+>>>>>>> 3dcef4f853ce5f9fcf0c6315e9329cb1de17b32b
 
 
 ## Getting Started
